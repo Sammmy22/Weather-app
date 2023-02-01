@@ -1,4 +1,4 @@
-const apiKey = "49c23dfdaeed70e9eeddb5813bc71298";
+const apiKey = "Your API key";
 const query = document.querySelector("#location");
 const btn = document.querySelector("#get");
 const display = document.querySelector("#result");
