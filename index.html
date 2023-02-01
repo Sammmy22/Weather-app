@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pico.min.css" />
+    <style>
+      #desc {
+        display: inline-block;
+        padding-top: 1%;
+        padding-left: 1%;
+      }
+
+      #location {
+        display: inline-block;
+        width: 40%;
+        position: absolute;
+        right: 11.5%;
+        padding-right: 2px;
+      }
+
+      button {
+        display: inline-block;
+        width: 10%;
+      }
+
+      #search {
+        right: 1%;
+        display: inline;
+      }
+
+      #get {
+        position: absolute;
+        top: 1%;
+        right: 1%;
+      }
+
+      #top {
+        margin-top: 0.5%;
+      }
+
+      #title {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      #result {
+        margin: auto;
+        text-align: center;
+      }
+    </style>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div id="top">
+      <span id="desc"
+        >Weather App by Sambhav, more on
+        <a href="https://github.com/Sammmy22">Github</a></span
+      >
+      <div id="search">
+        <input
+          type="text"
+          id="location"
+          placeholder="Enter a city e.g. Mumbai"
+        />
+        <button id="get">Get!</button>
+      </div>
+    </div>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
