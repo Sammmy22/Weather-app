@@ -21,39 +21,47 @@ btn.addEventListener("click", function () {
             }@2x.png"> Weather for: ${data.name}, ${data.sys.country} </h2>
             <table role="grid">
             <tr>
-            <th>Temperature</th>
-            <td>${data.main.temp} &#8451;</td>
+                <th>Temperature</th>
+                <td>${data.main.temp} &#8451;</td>
             </tr>
             <tr>
-            <th>Feels Like</th>
-            <td>${data.main.feels_like} &#8451;</td>
+                <th>Feels Like</th>
+                <td>${data.main.feels_like} &#8451;</td>
             </tr>
             <tr>
                 <th>Humidity</th>
                 <td>${data.main.humidity}%</td>
-                </tr>
-                <tr>
+            </tr>
+            <tr>
                 <th>Wind Speed</th>
                 <td>${data.wind.speed} m/s</td>
             </tr>
             <tr>
-            <th>Weather</th>
-            <td>${data.weather[0].main}</td>
+                <th>Weather</th>
+                <td>${data.weather[0].main}</td>
             </tr>
             <tr>
-            <th>Pressure</th>
-            <td>${data.main.pressure} hPa</td>
+                <th>Pressure</th>
+                <td>${data.main.pressure} hPa</td>
             </tr>
             <tr>
                 <th>Sunrise</th>
                 <td>${new Date(
                   data.sys.sunrise * 1000
                 ).toLocaleTimeString()}</td>
-                </tr>
-                <tr>
+            </tr>
+            <tr>
                 <th>Sunset</th>
                 <td>
-            ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}</td>
+                ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}</td>
+            </tr>
+            <tr>
+                <th>Latitude</th>
+                <td>${data.coord.lat}</td>
+            </tr>
+            <tr>
+                <th>Longitude</th>
+                <td>${data.coord.lon}</td>
             </tr>
             </table>
           `;
