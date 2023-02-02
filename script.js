@@ -18,7 +18,9 @@ btn.addEventListener("click", function () {
       display.innerHTML = `
             <h2 id="title"><img src="http://openweathermap.org/img/wn/${
               data.weather[0].icon
-            }@2x.png"> Weather for: ${data.name}, ${data.sys.country} </h2>
+            }@2x.png" width="80" height="80" /> Weather for: ${data.name}, ${
+        data.sys.country
+      } </h2>
             <table role="grid">
             <tr>
                 <th>Temperature</th>
