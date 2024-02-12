@@ -1,85 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="pico.min.css" />
-    <style>
-      #desc {
-        display: inline-block;
-        padding-top: 1%;
-        padding-left: 1%;
-      }
-
-      #location {
-        display: inline-block;
-        width: 40%;
-        position: absolute;
-        right: 11.5%;
-        padding-right: 2px;
-      }
-
-      button {
-        display: inline-block;
-        width: 10%;
-      }
-
-      #search {
-        right: 1%;
-        display: inline;
-      }
-
-      #get {
-        position: absolute;
-        top: 1%;
-        right: 1%;
-      }
-
-      #top {
-        margin-top: 0.5%;
-        padding-bottom: 1%;
-      }
-
-      #title {
-        text-align: center;
-        margin-bottom: 10px;
-      }
-      #result {
-        margin: auto;
-        text-align: center;
-      }
-
-      table {
-        margin-bottom: 10px;
-      }
-
-      hr {
-        height: 1px;
-        border: none;
-        width: 98%;
-        background-color: aliceblue;
-      }
-    </style>
+    <meta charset="utf-8" />
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div id="top">
-      <span id="desc"
-        >Weather App by Sambhav, more on
-        <a target="_blank" href="https://github.com/Sammmy22">Github</a></span
-      >
-      <div id="search">
+    <h1>Weather Dashboard</h1>
+    <div class="container">
+      <div class="weather-input">
+        <h3>Enter a City Name</h3>
         <input
+          class="city-input"
           type="text"
-          id="location"
-          placeholder="Enter a city e.g. Mumbai"
+          placeholder="E.g., Mumbai, Bengaluru, Delhi, etc."
         />
-        <button id="get">Get!</button>
+        <button class="search-btn">Search</button>
+        <div class="separator"></div>
+        <button class="location-btn">Use Current Location</button>
+      </div>
+      <div class="weather-data">
+        <div class="current-weather">
+          <div class="details">
+            <h2>_______ ( ______ )</h2>
+            <h6>Temperature: __°C</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </div>
+        </div>
+        <div class="days-forecast">
+          <h2>5-Day Forecast</h2>
+          <ul class="weather-cards">
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <hr />
-    <div id="result"></div>
     <script src="script.js"></script>
   </body>
 </html>
